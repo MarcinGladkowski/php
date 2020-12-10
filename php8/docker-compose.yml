@@ -1,0 +1,9 @@
+#
+# For testing PHP8
+#
+version: "3.7"
+services:
+  php8:
+    build: .
+    volumes:
+      - './src/:/usr/src/php8'
