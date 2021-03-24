@@ -4,3 +4,26 @@ services:
     build: .
     volumes:
       - '.:/usr/src/php'
+    command: bin/bash
+    networks:
+      - php
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3308:3306"
+    volumes:
+      - php_db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: app
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: password
+    networks:
+      - php
+
+volumes:
+  php_db: {}
+
+networks:
+  php: {}
