@@ -7,6 +7,7 @@ This repository is for to collect all good examples, curious things,
 short tutorials and many other about PHP.
 
 * [Locking resources](./locking_resources/)
+* [Streams](./streams)
 
 ### Place to get knowledge  
 * [Nomad PHP](https://nomadphp.com/)
