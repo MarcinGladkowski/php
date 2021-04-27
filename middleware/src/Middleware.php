@@ -3,7 +3,7 @@
 /**
  * Middlewares
  * - Implementation of PSR-15 https://www.php-fig.org/psr/psr-15/
- * - package to install it https://github.com/php-fig/http-server-handler
+ * - package to install it "psr/http-server-middleware"
  * - Invented to resolve problems in API applications (not MVC)
  * - Whe some code is duplicated and uses over and over the all application
  *
@@ -13,5 +13,9 @@
  * - Authentication
  * - Auditing
  * - Rate limiting
+ * - Caching
+ * - Header Accept Check
+ * - Data Filter
+ * etc...
  */
 
