@@ -4,7 +4,16 @@ services:
     build: .
     volumes:
       - '../.:/usr/src/php'
-    command: bin/bash
+    networks:
+      - php
+    ports:
+      - "3000:3000"
+  php8.0:
+    build:
+      dockerfile: php_8_dockerfile
+      context: .
+    volumes:
+      - '../.:/usr/src/php'
     networks:
       - php
   db:
