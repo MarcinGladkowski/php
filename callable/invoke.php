@@ -30,7 +30,7 @@ if (!empty($routes[$_SERVER['REQUEST_URI']])) {
 // use class as callable
 class Square
 {
-    public function __invoke(int $num)
+    public function __invoke(int $num): float|int
     {
         return $num * $num;
     }
@@ -40,3 +40,5 @@ function addAndModify(int $num1, int $num2, callable $modifier) {
     $total = $num2 + $num1;
     return $modifier($total);
 }
+
+echo addAndModify(1, 2, new Square());
