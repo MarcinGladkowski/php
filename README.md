@@ -6,8 +6,6 @@
 This repository is for to collect all good examples, curious things, 
 short tutorials and many other about PHP.
 
-* [Locking resources](./locking_resources/)
-* [Streams](./streams)
 * [Annotations](./annotations)
 * [Arrays](./arrays)
 * [Asynchronous](./asynchronous)
@@ -16,9 +14,13 @@ short tutorials and many other about PHP.
 * [Design_Patterns](./design_patterns)
 * [Doctrine_Optimization](./doctrine_optimization)
 * [Easy_Builder](./easy_builder)
+* [Generics](./generics)
+* [Guzzle](./guzzle)
 * [Iterator_Aggregate](./iterator_aggregate)
 * [Locking_Resources](./locking_resources)
 * [Middleware](./middleware)
+* [Money](./money)
+* [Parallel](./parallel)
 * [Password_Hashing](./password_hashing)
 * [Serialization](./serialization)
 * [Solid](./solid)
