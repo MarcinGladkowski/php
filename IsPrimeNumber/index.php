@@ -20,7 +20,7 @@ function betterIsPrimeNumber(int $n, int $i = 2): bool {
         return false;
     }
 
-    if ($i > $n**0.5) {
+    if ($i > sqrt($n)) {
         return true;
     }
 
