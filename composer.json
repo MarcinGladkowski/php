@@ -1,0 +1,12 @@
+{
+    "name": "php-knowledge/php",
+    "description": "Repository about all knowledge and curious things in PHP",
+    "authors": [
+        {
+            "name": "Marcin",
+            "email": "marcingladkowski@gmail.com"
+        }
+    ],
+    "require": {},
+    "psr-4": {"App\\": "src/"}
+}
