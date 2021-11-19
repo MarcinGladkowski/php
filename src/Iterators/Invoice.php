@@ -1,5 +1,7 @@
 <?php declare(strict_types=1);
 
+namespace App\Iterators;
+
 class Invoice
 {
     private int $id;
@@ -8,9 +10,4 @@ class Invoice
     {
         $this->id = random_int(10000, 999999);
     }
-}
-
-
-foreach((new Invoice(100)) as $key => $item) {
-    echo 'Key: ' . $key . ' value: ' . $item . PHP_EOL;
 }
