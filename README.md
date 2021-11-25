@@ -7,6 +7,7 @@ This repository is for to collect all good examples, curious things,
 short tutorials and many other about PHP.
 
 * [Annotations](src/annotations)
+* [Anonymous](src/AnonymousClasses)
 * [Arrays](src/arrays)
 * [Asynchronous](src/asynchronous)
 * [Attributes](src/attributes)
