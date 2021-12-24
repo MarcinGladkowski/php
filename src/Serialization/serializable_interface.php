@@ -1,6 +1,8 @@
 <?php
 
-
+/**
+ * Important notice! The \Serializable interface will be removed/deprecated from PHP 8.1, PHP 9
+ */
 class User implements \Serializable
 {
     private string $name = 'Marcin';

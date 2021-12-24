@@ -3,7 +3,6 @@
 /**
  * From 7.4
  */
-
 class User
 {
     private string $name = 'Marcin';
