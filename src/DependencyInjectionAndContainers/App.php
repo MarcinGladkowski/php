@@ -8,16 +8,20 @@ class App
 {
     public static $container;
 
-    public function __construct()
+    public function __construct(bool $autowiring = false)
     {
-        self::$container = new Container();
+        self::$container = $autowiring ? new AutowiringContainer() : new Container();
 
-        self::$container->set(InvoiceService::class, static function($c) {
-           return new InvoiceService(
-               $c->get(TaxService::class)
-           );
-        });
+        if (!$autowiring) {
+            // load normal configuration
+            self::$container->set(InvoiceService::class, static function($c) {
+                return new InvoiceService(
+                    $c->get(TaxService::class)
+                );
+            });
 
-        self::$container->set(TaxService::class, fn() => new TaxService());
+            self::$container->set(TaxService::class, fn() => new TaxService());
+        }
+
     }
 }
