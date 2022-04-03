@@ -2,7 +2,7 @@
 
 namespace Root\Attributes;
 
-class Route
+#[\Attribute] class Route
 {
     public function __construct(
       public string $path,
