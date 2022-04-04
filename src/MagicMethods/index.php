@@ -74,7 +74,8 @@ var_dump(serialize($sleepWakeup));
  * Using this __call() method we can implement overloading methods with the same signature but different
  * parameters.
  *
- * Useful to implement Interceptor design pattern.
+ * - Useful to implement Interceptor design pattern.
+ * - We can replace a lot of very similar functions by calling them and then parsing a name of function
  */
 
 class SomeCallMagic
@@ -84,3 +85,42 @@ class SomeCallMagic
         return "Called not existed method!";
     }
 }
+
+/**
+ * Used by var_dump() method for debugging process
+ */
+class SomeDebugInfoMagic
+{
+    private int $amount = 100;
+
+    public function __debugInfo(): ?array
+    {
+        return ['amount' => $this->amount];
+    }
+}
+
+/**
+ * Using by clone() function - clone $someInstance
+ *
+ * Warning: Nested instances have to cloned separately like example below
+ * because without it the reference to the same nested object will be keep
+ * in new object!
+ *
+ * - Useful in Prototype design pattern.
+ *
+ */
+class SomeCloneMagic
+{
+    private SomeClass $instance;
+
+    public function __clone(): void
+    {
+        $this->instance = clone $this->instance;
+    }
+}
+
+class SomeClass {}
+
+
+
+
