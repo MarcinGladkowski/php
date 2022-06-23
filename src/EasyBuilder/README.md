@@ -225,4 +225,7 @@ private function __construct()
 // ...    
 ```
 
-Of course we can create this in many others ways. 
+Of course, we can create this in many others ways. In this post I show how we can play with testing
+objects. The other thinks is creating more advanced factory to cover some object creation behind some 
+interface to prevent some problems when the rules of initialization of tests object has change.
+
