@@ -4,7 +4,7 @@ WORKDIR /usr/src/php
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git
+    apt-get install -y git zip
 
 RUN docker-php-ext-install sysvmsg sysvsem pdo pdo_mysql zip
 
