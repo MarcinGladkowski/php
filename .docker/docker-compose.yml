@@ -3,7 +3,7 @@ services:
   php:
     container_name: docker_php_knowledge
     build:
-      dockerfile: php_8_dockerfile
+      dockerfile: Dockerfile
       context: .
     volumes:
       - '../.:/usr/src/php'
