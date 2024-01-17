@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "ext-sockets": "*",
         "psr/container": "^2.0",
         "phpunit/phpunit": "^9.5",
         "doctrine/dbal": "^3.5"

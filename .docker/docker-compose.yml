@@ -2,6 +2,7 @@ version: "3.7"
 services:
   php:
     container_name: docker_php_knowledge
+    image: php-practice
     build:
       dockerfile: Dockerfile
       context: .

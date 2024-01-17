@@ -1,4 +1,4 @@
-FROM php:8.1
+FROM php:8.2
 
 WORKDIR /usr/src/php
 
@@ -11,11 +11,12 @@ RUN apt-get install -y \
         zip \
   && docker-php-ext-install zip
 
-RUN apt-get update && apt install -y libpq-dev libpng-dev && docker-php-ext-install pdo pdo_mysql zip
+RUN apt-get update && apt install -y libpq-dev libpng-dev && docker-php-ext-install pdo pdo_mysql zip sockets
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 
-CMD ["bash"]
+RUN touch /usr/local/etc/php/php.ini && \
+    echo "extension=sockets" >> /usr/local/etc/php/php.ini
