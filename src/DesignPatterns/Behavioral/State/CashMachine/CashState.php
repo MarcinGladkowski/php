@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+namespace DesignPatterns\Behavioral\State\CashMachine;
+
 abstract class CashState
 {
     protected CashMachine $cashMachine;

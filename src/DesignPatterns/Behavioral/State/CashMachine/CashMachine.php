@@ -1,6 +1,8 @@
 <?php
 
-use JetBrains\PhpStorm\Pure;
+declare(strict_types=1);
+
+namespace DesignPatterns\Behavioral\State\CashMachine;
 
 class CashMachine
 {
