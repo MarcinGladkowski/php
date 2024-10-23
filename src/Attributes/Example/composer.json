@@ -1,9 +1,0 @@
-{
-    "name": "root/attributes",
-    "autoload": {
-        "psr-4": {
-            "Root\\Attributes\\": "/src/attributes/src"
-        }
-    },
-    "require": {}
-}
