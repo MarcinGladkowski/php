@@ -1,6 +1,9 @@
 <?php
 
 /**
+ * @see https://phpstan.org/blog/generics-by-examples
+ *
+ *
  * @template T
  */
 class Collection
