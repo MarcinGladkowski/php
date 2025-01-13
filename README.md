@@ -4,7 +4,7 @@
 # All Staff about PHP
 
 This repository is for to collect all good examples, curious things, 
-short tutorials and many other about PHP.
+short tutorials and many others about PHP.
 
 * [Annotations](src/Annotations)
 * [Anonymous](src/AnonymousClasses)
@@ -37,6 +37,22 @@ short tutorials and many other about PHP.
 * [Blog: Herberto Graca](https://herbertograca.com/)
 * [Blog: Matthias Noback](https://matthiasnoback.nl/)
 * [Blog: phpconference](https://phpconference.com/blog/)
+* [Page: sourcemaking.com](https://sourcemaking.com/)
 
 ### PHP 8
 * [What's new in PHP8](https://stitcher.io/blog/new-in-php-8)
+
+### PHP 8.1
+
+### PHP 8.2
+
+### PHP 8.3 
+
+### PHP 8.4
+
+### Design patterns
+
+## Behavioural
+- [Null object pattern](./src/DesignPatterns/Behavioral/NullObject)
+    > Replaces using Null within an object, looks like a stub
+
