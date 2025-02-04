@@ -55,4 +55,8 @@ short tutorials and many others about PHP.
 ## Behavioural
 - [Null object pattern](./src/DesignPatterns/Behavioral/NullObject)
     > Replaces using Null within an object, looks like a stub
+  >
+
+## Good Practices
+* [Final Classes](https://matthiasnoback.nl/2018/09/final-classes-by-default-why/)
 
